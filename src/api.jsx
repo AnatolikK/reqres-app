@@ -112,13 +112,3 @@ export const loginUser = async (email, password) => {
   }
 };
 
-// Запрос с задержкой
-export const fetchDelayedResponse = async (delay) => {
-  try {
-    const response = await axios.get(`${API_URL}/users?delay=${delay}`);
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching delayed response:', error);
-    throw error;
-  }
-};

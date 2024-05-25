@@ -1,4 +1,3 @@
-// src/components/Filters.js
 import React from 'react';
 
 const Filters = ({ onFilter }) => {
